@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Cheatsheet</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #222;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background: white;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    th, td {
+      padding: 12px;
+      border: 1px solid #ddd;
+      vertical-align: top;
+    }
+
+    th {
+      background-color: #4CAF50;
+      color: white;
+      text-align: left;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    code {
+      background: #eee;
+      padding: 4px 6px;
+      display: block;
+      white-space: pre-wrap;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>JavaScript Programming Cheatsheet</h1>
+
+<table>
+  <tr>
+    <th>Class / Method</th>
+    <th>Description</th>
+    <th>Example</th>
+  </tr>
+
+  <tr>
+    <td>appendChild()</td>
+    <td>Adds a node to the end of a parent element.</td>
+    <td><code>
+var p = document.createElement("p");
+p.appendChild(document.createTextNode("Hello World"));
+document.body.appendChild(p);
+    </code></td>
+  </tr>
+
+  <tr>
+    <td>Arrays</td>
+    <td>Stores multiple values in a single variable.</td>
+    <td><code>
+const Beatles = ["Ringo", "Paul", "George", "John"];
+// Beatles[0] = "Ringo"
+    </code></td>
+  </tr>
+
+  <tr>
+    <td>Date()</td>
+    <td>Creates date objects.</td>
+    <td><code>
+var d = new Date("2021-01-17 13:15:30");
+var d2 = new Date(2021, 0, 17);
+    </code></td>
+  </tr>
+
+  <tr>
+    <td>getElementById()</td>
+    <td>Selects element by ID.</td>
+    <td><code>
+document.getElementById("div1").innerHTML = "Hello World";
+    </code></td>
+  </tr>
+
+  <tr>
+    <td>getElementsByTagName()</td>
+    <td>Returns elements by tag name.</td>
+    <td><code>
+var pTags = document.getElementsByTagName("p");
+    </code></td>
+  </tr>
+
+  <tr>
+    <td>document.write()</td>
+    <td>Writes directly to page (not recommended).</td>
+    <td><code>
+document.write("Hello World");
+    </code></td>
+  </tr>
+
+  <tr>
+    <td>innerHTML</td>
+    <td>Gets or sets HTML content.</td>
+    <td><code>
+document.getElementById("div1").innerHTML = "&lt;p&gt;Hello&lt;/p&gt;";
+    </code></td>
+  </tr>
+
+  <tr>
+    <td>setAttribute()</td>
+    <td>Sets attribute value.</td>
+    <td><code>
+document.getElementById("img").setAttribute("src", "image.png");
+    </code></td>
+  </tr>
+
+  <tr>
+    <td>removeAttribute()</td>
+    <td>Removes attribute.</td>
+    <td><code>
+element.removeAttribute("style");
+    </code></td>
+  </tr>
+
+  <tr>
+    <td>style</td>
+    <td>Changes inline CSS.</td>
+    <td><code>
+element.style.color = "red";
+    </code></td>
+  </tr>
+
+  <tr>
+    <td>Error Objects</td>
+    <td>Handles errors using try/catch.</td>
+    <td><code>
+try {
+  throw new Error("Invalid");
+} catch (err) {
+  console.log(err.message);
+}
+    </code></td>
+  </tr>
+
+  <tr>
+    <td>History Object</td>
+    <td>Controls browser history.</td>
+    <td><code>
+history.go(-1);
+    </code></td>
+  </tr>
+
+  <tr>
+    <td>Location Object</td>
+    <td>Info about current URL.</td>
+    <td><code>
+console.log(location.hostname);
+    </code></td>
+  </tr>
+
+  <tr>
+    <td>Navigator Object</td>
+    <td>Browser information.</td>
+    <td><code>
+console.log(navigator.appName);
+    </code></td>
+  </tr>
+
+  <tr>
+    <td>Window Object</td>
+    <td>Main browser object.</td>
+    <td><code>
+window.open("https://example.com");
+    </code></td>
+  </tr>
+
+  <tr>
+    <td>scrollTo()</td>
+    <td>Scrolls window.</td>
+    <td><code>
+window.scrollTo(0, 200);
+    </code></td>
+  </tr>
+
+</table>
+
+</body>
+</html>
